@@ -356,6 +356,7 @@ h6 {
 
 .marquee-track {
   display: flex;
+  align-items: center;
   gap: 60px;
   animation: scroll 30s linear infinite;
   width: max-content;
@@ -373,6 +374,12 @@ h6 {
 .client-logo:hover {
   opacity: 1;
   filter: grayscale(0%);
+}
+
+img[src*="aoklandz"],
+img[src*="godoggie"],
+img[src*="cici-mandarin"] {
+  height: 130px; /* Make these 3 larger to visually balance with others */
 }
 
 @keyframes scroll {
@@ -765,6 +772,12 @@ h6 {
 
   .client-logo {
     height: 48px;
+  }
+
+  img[src*="aoklandz"],
+  img[src*="godoggie"],
+  img[src*="cici-mandarin"] {
+    height: 72px;
   }
 
   .footer-links {
