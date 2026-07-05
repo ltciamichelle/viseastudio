@@ -80,9 +80,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Layout Utilities */
 .container {
   width: 100%;
-  max-width: var(--max-width, 1280px);
+  max-width: var(--max-width, 1440px);
   margin: 0 auto;
-  padding-inline: clamp(24px, 5vw, 120px);
+  padding-inline: clamp(24px, 4vw, 64px);
 }
 
 .section {
@@ -92,6 +92,30 @@ h1, h2, h3, h4, h5, h6 {
 .grid {
   display: grid;
   gap: 2rem;
+}
+
+.stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px; /* Closer spacing */
+  margin-top: 64px;
+}
+
+.stat-item h3 {
+  font-size: clamp(64px, 8vw, 96px); /* Much bigger numbers */
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 8px;
+}
+
+.stat-item p {
+  font-size: 15px;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
 }
 
 .flex {
@@ -217,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo img {
-  height: 24px;
+  height: 32px;
   width: auto;
 }
 
@@ -229,6 +253,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
   .nav-links {
     display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -248,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 160px;
   position: relative;
   overflow: hidden;
 }
