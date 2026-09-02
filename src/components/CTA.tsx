@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function CTA() {
   return (
     <section className="section bg-paper cta-section" id="contact">
